@@ -2,8 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .clip-hexagon {
+    clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+  }
+  .clip-top-hexagon {
+    clip-path: polygon(50% 0, 100% 25%, 100% 35%, 50% 10%, 0 35%, 0 25%);
+  }
+  .clip-link-navbar {
+    clip-path: polygon(5% 0, 100% 0%, 95% 100%, 0% 100%);
+  }
+  .underline-link-hover {
+    @apply absolute bg-gradient-to-r from-amber-500 to-red-400 opacity-0 group-hover:opacity-100 w-full left-0 h-1 clip-link-navbar bottom-[2px] duration-150
+  }
+  .active-menu {
+    @apply absolute w-full max-w-80 md:hidden bg-primary rounded-sm shadow-md top-24 right-0 z-50
+  }
+  .close-open-menu {
+    @apply absolute h-5 w-5 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2
+  }
+}
+
 /* Aquí puedes agregar estilos globales si los necesitas */
-:root {
+/* :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -70,4 +91,4 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
-}
+} */
