@@ -6,9 +6,18 @@ module.exports = {
       colors: {
         // Agrega aquí tu paleta personalizada
         // ejemplo:
-        // primary: '#1D4ED8',
-        // secondary: '#64748B',
-        // accent: '#F59E42',
+        primary: '#F0F4F8',
+        //gris azulado claro 60
+        secondary: '#6B7280',
+        //gris medio 30
+        accent: '#10B981',
+        //verde menta 10
+        hexagonShadowColor:'#334155',
+        hexagonMainColor:'#e2e8f0',
+        hexagonTopColor:'#f1f5f9',
+        gradientColorLeft: '#f59e0b',
+        gradientColorRight: '#ef4444',
+        navLinkHover:'#f59e0b'
       },
     },
   },
