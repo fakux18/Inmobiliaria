@@ -1,14 +1,26 @@
 import { useState } from 'react';
 import mobileBurguerIcon from '../assets/images/burger-menu-svgrepo-com.svg';
 import mobileCloseIcon from '../assets/images/close-menu-x-svgrepo-com.svg';
-
+import { useNavigate } from 'react-router-dom';
 
 export default function Navbar() {
-  const [active, setActive] = useState<boolean>(false);
+  const [active, setActive] = useState(false);
+  const [count, setCount] = useState(0);
+  const palAdmin = useNavigate()
+
+  const handleClick = () => {
+    const newCount = count + 1
+    if (newCount === 5) {
+      palAdmin('/admin')
+      setCount(0)
+    } else {
+      setCount(newCount)
+  }
+}
 
   return (
-    <nav className="w-10/12 h-20 max-w-screen-2xl mx-auto bg-primary shadow-md px-4 md:px-6 rounded-sm flex justify-between items-center relative">
-      <div>
+    <nav className="h-20 bg-primary shadow-md px-4 md:px-6 rounded-sm flex justify-between items-center relative">
+      <div onClick={handleClick}>
         <img src="logo.png" alt="Logito"/>
       </div>
       <ul className='w-full md:w-auto hidden md:flex gap-8'>

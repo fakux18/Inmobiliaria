@@ -12,12 +12,17 @@ module.exports = {
         //gris medio 30
         accent: '#10B981',
         //verde menta 10
+        //NAVBAR COLORS
         hexagonShadowColor:'#334155',
         hexagonMainColor:'#e2e8f0',
         hexagonTopColor:'#f1f5f9',
         gradientColorLeft: '#f59e0b',
         gradientColorRight: '#ef4444',
-        navLinkHover:'#f59e0b'
+        navLinkHover:'#f59e0b',
+        //HOUSE CARD COLORS
+        cardPriceText: '#6B7280',
+        cardPriceTextHover: '#f59e0b',
+        locationTextBg:'#212121ab',
       },
     },
   },
