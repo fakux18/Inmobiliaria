@@ -1,58 +1,36 @@
 import whatsappIcon from '../assets/images/whatsapp-social-media-svgrepo-com.svg'
 import Navbar from "../components/Navbar";
-import HouseCard from "../components/HouseCard";
+import HouseCard from "../components/PropertiesHouseCard";
+import mainImg from "../assets/images/hero-images/Salon-decorado.jpg.webp"
+import logoImg from "../assets/images/hero-images/casa-akinm.png"
+import About from '../components/About';
+import Services from '../components/Services';
+import Footer from '../components/Footer';
+import Properties from '../components/Properties';
 
 function Home() {
 
   return (
-    <main className="w-full h-dvh relative">
-      <main className="w-10/12 max-w-screen-2xl mx-auto relative">
+      <main className="min-w-full min-h-dvh">
         <Navbar></Navbar>
-
-        {/* PROPIEDADES */}
-        <section id="propiedades" className="space-y-8">
-          <h2 className="text-3xl md:text-4xl gradient-titles">Propiedades</h2>
-          <div className="grid sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-3">
-            <HouseCard/>
-            <HouseCard/>
-            <HouseCard/>
-            <HouseCard/>
-            <HouseCard/>
-            <HouseCard/>
-            <HouseCard/>
-            <HouseCard/>
-            <HouseCard/>
-            <HouseCard/>
-            <HouseCard/>
-            <HouseCard/>
-          </div>
-        </section>
-
-        <section id="servicios" className="space-y-8">
-            <h2 className="text-3xl md:text-4xl font-bold text-primary">Servicios</h2>
-            <div className="grid md:grid-cols-3 gap-6">
-              <div className="bg-white p-6 shadow-md rounded-lg">
-                <h3 className="text-xl font-semibold text-gray-800">Compra y Venta</h3>
-                <p className="text-gray-600 mt-2">Te ayudamos a comprar o vender tu propiedad de forma segura y rápida.</p>
-              </div>
-              <div className="bg-white p-6 shadow-md rounded-lg">
-                <h3 className="text-xl font-semibold text-gray-800">Alquiler</h3>
-                <p className="text-gray-600 mt-2">Ofrecemos una amplia variedad de propiedades en alquiler por temporada o largo plazo.</p>
-              </div>
-              <div className="bg-white p-6 shadow-md rounded-lg">
-                <h3 className="text-xl font-semibold text-gray-800">Asesoramiento Legal</h3>
-                <p className="text-gray-600 mt-2">Contamos con profesionales que te asesoran en todo el proceso legal inmobiliario.</p>
-              </div>
-            </div>
-        </section>
-
-        <div className="h-16 w-16 fixed bottom-6 right-0">
-          <img src={whatsappIcon} alt="icono whatsapp" />
+        <div className='relative'>
+          <img src={mainImg} className='w-dvw h-dvh max-h-[1080px] rounded-b-3xl transform -translate-y-20 z-10' alt="" />
         </div>
-
+        <About></About>
+        {/* PROPIEDADES */}
+        <Properties></Properties>
+        <Services></Services>
+        <Footer></Footer>
+        {/* <div className='h-dvh flex items-center justify-center'>
+          <h1 className='text-2xl md:text-4xl lg:text-6xl mb-20 py-20 xl:text-6xl uppercase text-center italic font-extrabold leading-relaxed bg-white/25 backdrop-blur-md rounded-lg border shadow-2xl border-slate-200 p-6 main-title'>
+            <p>Tu hogar empieza aca</p>
+            <p>AP inmobiliaria</p>
+          </h1>
+          <div className='h-80 w-80 2xl:h-96 2xl:w-96 bg-white/30 mb-10 border-2 backdrop-blur-md border-green-600 shadow-2xl p-6 rounded-full'>
+            <img src={logoImg} alt="" />
+          </div>
+        </div> */}
       </main>
-
-    </main>
   );
 }
 

@@ -20,7 +20,7 @@ module.exports = {
         gradientColorRight: '#ef4444',
         navLinkHover:'#f59e0b',
         //HOUSE CARD COLORS
-        cardPriceText: '#6B7280',
+        cardText: '#6B7280',
         cardPriceTextHover: '#f59e0b',
         locationTextBg:'#212121ab',
       },

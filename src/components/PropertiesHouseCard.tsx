@@ -12,9 +12,9 @@ import casita from '../assets/images/houses/maxresdefault.jpg'
 import casita2 from '../assets/images/houses/casita2.png'
 import casita3 from '../assets/images/houses/casita3.jpeg'
 
-export default function HouseCard() {
+export default function PropertiesHouseCard() {
   return (
-    <a href='XD' className="bg-white shadow-md rounded-lg overflow-hidden group">
+    <a className="bg-white shadow-md rounded-lg overflow-hidden group">
       <div className='relative'>
         {/* la wea de las imagenes */}
         <Swiper pagination={true} navigation={true} modules={[Pagination,Navigation]} className="mySwiper">

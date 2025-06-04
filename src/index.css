@@ -21,8 +21,17 @@
   .close-open-menu {
     @apply absolute h-5 w-5 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2
   }
+
+  .main-title {
+    @apply inline bg-gradient-to-b from-green-600 to-amber-100 bg-clip-text text-transparent
+  }
+
   .gradient-titles {
     @apply inline bg-gradient-to-b from-slate-800 to-slate-500 bg-clip-text text-transparent
+  }
+
+  .center-all {
+    @apply w-10/12 max-w-screen-2xl mx-auto
   }
 }
 
