@@ -16,7 +16,7 @@
     @apply absolute bg-gradient-to-r from-amber-500 to-red-400 opacity-0 group-hover:opacity-100 w-full left-0 h-1 clip-link-navbar bottom-[2px] duration-150
   }
   .active-menu {
-    @apply absolute w-full max-w-80 md:hidden bg-primary rounded-sm shadow-md top-24 right-0 z-50
+    @apply absolute w-full max-w-[356.667px] md:hidden bg-primary rounded-sm shadow-md top-24 right-0 z-50
   }
   .close-open-menu {
     @apply absolute h-5 w-5 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2
@@ -32,6 +32,10 @@
 
   .center-all {
     @apply w-10/12 max-w-screen-2xl mx-auto
+  }
+
+  .clip-footer-overline {
+    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
   }
 }
 

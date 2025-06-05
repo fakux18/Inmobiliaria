@@ -24,7 +24,19 @@ export default function Navbar() {
       <div onClick={handleClick} className='w-32 h-16 flex justify-center items-center'>
         <img src={navLogo} alt="Logito"/>
       </div>
-      <ul className='w-full md:w-auto hidden md:flex gap-8'>
+      <ul className='w-full md:w-auto hidden md:flex gap-3 lg:gap-8'>
+        <li className='relative'>
+          <a href="#" className='relative group text-center block py-4 md:py-2 hover:text-navLinkHover duration-100'>
+            Inicio
+            <span className='underline-link-hover'></span>
+          </a>
+        </li>
+        <li className='relative'>
+          <a href="#" className='relative group text-center block py-4 md:py-2 hover:text-navLinkHover duration-100'>
+            Conocenos
+            <span className='underline-link-hover'></span>
+          </a>
+        </li>
         <li className='relative'>
           <a href="#" className='relative group text-center block py-4 md:py-2 hover:text-navLinkHover duration-100'>
             Propiedades
@@ -70,6 +82,8 @@ export default function Navbar() {
         ? 'active-menu' 
         : 'hidden'
         }>
+        <li><a href="#" className='text-center block py-4 border-b-2 border-secondary hover:text-amber-400 duration-100'>Inicio</a></li>
+        <li><a href="#" className='text-center block py-4 border-b-2 border-secondary hover:text-amber-400 duration-100'>Conocenos</a></li>
         <li><a href="#" className='text-center block py-4 border-b-2 border-secondary hover:text-amber-400 duration-100'>Propiedades</a></li>
         <li><a href="#" className='text-center block py-4 border-b-2 border-secondary hover:text-amber-400 duration-100'>Servicios</a></li>
         <li><a href="#" className='text-center block py-4 border-b-2 border-secondary hover:text-amber-400 duration-100'>Contacto</a></li>
