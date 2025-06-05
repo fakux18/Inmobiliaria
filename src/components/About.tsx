@@ -6,7 +6,7 @@ function About() {
   return (
     <section className="center-all mb-40">
 
-      <div className="flex flex-col md:flex-row gap-6 lg:max-h-[600px]">
+      <div className="flex flex-col md:flex-row gap-6 lg:max-h-[600px] mt-20">
 
         {/* Izquierda */}
         <div className="w-full flex flex-col gap-6 lg:flex-col">

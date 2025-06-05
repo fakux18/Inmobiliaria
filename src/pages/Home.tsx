@@ -13,8 +13,9 @@ import ContactForm from '../components/ContactForm';
 function Home() {
 
   return (
-      <main className="min-w-full min-h-dvh">
+      <main className="min-w-full min-h-dvh relative">
         <Navbar></Navbar>
+        {/* imagen bien puta */}
         <div className='relative'>
           <img 
           srcSet={mainImg} 
@@ -22,20 +23,16 @@ function Home() {
           <img src={mainImgMobile} className='w-dvw h-dvh max-h-[1080px] rounded-b-3xl transform -translate-y-20 z-10 object-fit md:hidden' alt="" />
         </div>
         <About></About>
-        {/* PROPIEDADES */}
         <Properties></Properties>
         <Services></Services>
         <ContactForm></ContactForm>
         <Footer></Footer>
-        {/* <div className='h-dvh flex items-center justify-center'>
-          <h1 className='text-2xl md:text-4xl lg:text-6xl mb-20 py-20 xl:text-6xl uppercase text-center italic font-extrabold leading-relaxed bg-white/25 backdrop-blur-md rounded-lg border shadow-2xl border-slate-200 p-6 main-title'>
-            <p>Tu hogar empieza aca</p>
-            <p>AP inmobiliaria</p>
-          </h1>
-          <div className='h-80 w-80 2xl:h-96 2xl:w-96 bg-white/30 mb-10 border-2 backdrop-blur-md border-green-600 shadow-2xl p-6 rounded-full'>
-            <img src={logoImg} alt="" />
-          </div>
-        </div> */}
+        {/* wpp icon */}
+        <div className='fixed flex justify-end pointer-events-none center-all bottom-5 h-20 left-1/2 transform -translate-x-1/2 z-50'>
+        <a href="" className='pointer-events-auto'>
+          <img src={whatsappIcon} alt="" className='h-20 w-20'/>
+        </a>
+        </div>
       </main>
   );
 }

@@ -14,7 +14,7 @@ import casita3 from '../assets/images/houses/casita3.jpeg'
 
 export default function ProductsCard() {
   return (
-    <a className="bg-white shadow-md rounded-lg overflow-hidden group">
+    <a className="bg-white shadow-md rounded-lg overflow-hidden group" href=''>
       <div className='relative'>
         {/* la wea de las imagenes */}
         <Swiper pagination={true} navigation={true} modules={[Pagination,Navigation]} className="mySwiper">

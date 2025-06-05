@@ -6,7 +6,7 @@ export default function ContactForm() {
       <div className="md:w-1/2 space-y-8">
         <h2 className="uppercase text-center text-green-700 md:text-left text-3xl font-extrabold">Contactanos</h2>
         <p className="text-sm text-center md:text-left text-gray-600">
-          En <span className="font-semibold">AK Inmobiliaria</span> estamos súper comprometidos en ayudarte a encontrar justo lo que necesitás. Ya sea que estés buscando tu próximo hogar, un auto, una propiedad para invertir o algún espacio comercial, nuestro equipo está acá para acompañarte en cada paso y hacer que todo sea más fácil y sin vueltas.
+          En <span className="font-semibold">AK Inmobiliaria</span> estamos súper comprometidos en ayudarte a encontrar justo lo que necesitás. Ya sea que estés buscando tu próximo hogar, un vehículo, una propiedad para invertir o algún espacio comercial, nuestro equipo está acá para acompañarte en cada paso y hacer que todo sea más fácil y sin vueltas.
 
           Solo déjanos tus datos de contacto y uno de nuestros asesores te va a llamar lo antes posible para charlar sobre lo que buscás, despejar todas tus dudas y mostrarte las mejores opciones que tenemos para vos.
 
